@@ -8,7 +8,7 @@ const MyQuest = () => {
 
   for (let i = 0; i < steps; i++) {
     divElements.push(
-      <div key={i} className="h-6 w-6 mx-1 rounded-full border-2"></div>
+      <div key={i} className={`h-6 w-6 mx-1 rounded-full border-2 ${i < 2 && "active"}`}></div>
     );
   }
   return (
