@@ -1,0 +1,51 @@
+[
+    {
+      "title": "Bike To Work",
+      "icon": "bike.svg",
+      "desc": "Use your bike to get to work",
+      "steps": 5
+    },
+    {
+      "title": "Pick Up Trash",
+      "icon": "trash.svg",
+      "desc": "Pick up some trash you find outside",
+      "steps": 5
+    },
+    {
+      "title": "Recycle",
+      "icon": "recycle.svg",
+      "desc": "Bring your trash to a recycle station",
+      "steps": 5
+    },
+    {
+      "title": "Public Transport",
+      "icon": "public_transport.svg",
+      "desc": "Use public transport instead of a car",
+      "steps": 5
+    },
+    {
+      "title": "Meal Plan",
+      "icon": "meal_plan.svg",
+      "desc": "Make a meal plan to fight food waste",
+      "steps": 5
+    },
+    {
+      "title": "Eat more vegetables",
+      "icon": "vegetable.svg",
+      "desc": "Include vegetables instead of meat in your diet",
+      "steps": 5
+    },
+    {
+      "title": "Cold Shower",
+      "icon": "shower.svg",
+      "desc": "Take a shorter, cold shower than usual",
+      "steps": 5
+    },
+    {
+      "title": "Save Electricity",
+      "icon": "electricity.svg",
+      "desc": "Unplug devices currently not in use instead of leaving them in standby",
+      "steps": 5
+    }
+  ]
+  
