@@ -97,7 +97,7 @@ const Login = () => {
         </div>
         <Link href={"/signup"}>
           <div className="m-auto mt-6 underline text-xl font-bold hover:cursor-pointer">
-            Don't have an account yet?
+            Don&apos;t have an account yet?
           </div>
         </Link>
       </div>
