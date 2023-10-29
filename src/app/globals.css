@@ -20,3 +20,8 @@
     color: #1B5A7A;
     background-color: white;
 }
+
+
+.disable:hover{
+    cursor: not-allowed;
+}
