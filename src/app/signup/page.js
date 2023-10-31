@@ -54,7 +54,7 @@ const Signup = () => {
           className="h-14 sm:w-80 px-2 border-2 border-black focus:border-2 focus:rounded-none"
         />
       </div>
-      <div className="mt-1 ml-40 text-red-600">{error && error?.error+"!"}</div>
+      <div className="mt-1 sm:ml-40 text-red-600">{error && error?.error+"!"}</div>
       <div className="h-14 w-fit flex mt-4">
         <div className=" h-14 flex justify-center items-center px-6 sm:text-3xl font-bold text-white bg-[#537749] border-2 border-black border-r-0">
           Password

@@ -68,7 +68,7 @@ const Login = () => {
           className="h-14 sm:w-80 px-2 border-2 border-black focus:border-2 focus:rounded-none"
         />
       </div>
-      <div className="mt-1 ml-40 text-red-600">
+      <div className="mt-1 sm:ml-40 text-red-600">
         {error && error?.error + "!"}
       </div>
       <div className="sm:mt-20 mt-6 text-center">

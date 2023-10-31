@@ -2,26 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-
 .custom-border {
-    border-radius: 39% 52% 27% 41% / 100% 100% 100% 100%  ;
-    border: 2px solid black;
-
+  border-radius: 39% 52% 27% 41% / 100% 100% 100% 100%;
+  border: 2px solid black;
 }
 
-.active{
-    background-color: #537749;
-    color: white;
+.tab-active {
+  background-color: #537749;
+  color: white;
+}
+
+.active {
+  background-color: #1b5a7a;
+  color: white;
 }
 
 .not-active {
-    color: #1B5A7A;
-    background-color: white;
+  color: #1b5a7a;
+  background-color: white;
 }
 
-
-.disable:hover{
-    cursor: not-allowed;
+.disable:hover {
+  cursor: not-allowed;
 }
