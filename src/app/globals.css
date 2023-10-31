@@ -25,3 +25,7 @@
 .disable:hover {
   cursor: not-allowed;
 }
+
+.custom-steps-border{
+    border: 1.5px solid black;
+}

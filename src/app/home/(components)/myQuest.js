@@ -17,7 +17,7 @@ const MyQuest = ({ userQuest, setTrackChanges, loading }) => {
       divElements.push(
         <div
           key={i}
-          className={`h-6 w-6 mx-1 rounded-full border-2 ${
+          className={`h-6 w-6 mx-1 rounded-full custom-steps-border ${
             i < steps && "active"
           }`}
         ></div>
