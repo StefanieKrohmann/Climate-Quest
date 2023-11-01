@@ -6,6 +6,7 @@ import AllQuest from "./(components)/allQuest";
 import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
 import { useRouter } from "next/navigation";
+import { deleteCookie,getCookie, setCookie } from 'cookies-next';
 const Home = () => {
   const [activeTab, setActiveTab] = useState(1);
   const [trackChange, setTrackChanges] = useState(false);
@@ -53,14 +54,16 @@ const Home = () => {
 
   const logout = async () => {
     try {
-     const a =  await axios.get("/api/users/logout");
-     console.log(a)
+      setCookie('token', "");
+      console.log(getCookie("token"))
+
+    //  const a =  await axios.get("/api/users/logout");
+    //  console.log(a)
       toast.success("Logout successful");
   
-      // Use setTimeout to delay the route change
       setTimeout(() => {
         router.push("/login");
-      }, 1000); // 1000 milliseconds = 1 second
+      }, 1000); 
     } catch (e) {
       console.log(e.message);
       toast.error(e.message);
