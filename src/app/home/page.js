@@ -16,7 +16,6 @@ const Home = () => {
   // USER QUEST :::
   const [userQuest, setUserQuest] = React.useState([]);
   const getUserQuest = () => {
-    console.log("GETTING DATA AGAIN ");
     setLoading(true);
     return fetch("/api/userquest")
       .then((res) => res.json()) // Parse the response as JSON
@@ -56,14 +55,12 @@ const Home = () => {
     try {
       setCookie('token', "");
     //  const a =  await axios.get("/api/users/logout");
-    //  console.log(a)
       toast.success("Logout successful");
   
       setTimeout(() => {
         router.push("/login");
       }, 1000); 
     } catch (e) {
-      console.log(e.message);
       toast.error(e.message);
     }
   };

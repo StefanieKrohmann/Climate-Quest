@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import axios from "axios";
 import toast from "react-hot-toast";
 import { PropagateLoader } from "react-spinners";
-import { setCookie } from 'cookies-next';
+import { setCookie } from "cookies-next";
 const Login = () => {
   const router = useRouter();
   const [user, setUser] = React.useState({
@@ -17,14 +17,13 @@ const Login = () => {
   const [loading, setLoading] = React.useState(false);
   const [error, setError] = React.useState();
   const onLogin = async (e) => {
-    e.preventDefault()
+    e.preventDefault();
     try {
       setLoading(true);
       const response = await axios.post("/api/users/login", user);
-      console.log("RES", response)
-      toast.success("Login Sucess!");
-      setCookie('token', response.data.token);
-      await router.push("/home");
+      toast.dismiss();
+      setCookie("token", response.data.token);
+      router.push("/home");
     } catch (e) {
       setError(e.response.data);
       toast.error(e.message);
