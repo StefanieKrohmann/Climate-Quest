@@ -55,8 +55,6 @@ const Home = () => {
   const logout = async () => {
     try {
       setCookie('token', "");
-      console.log(getCookie("token"))
-
     //  const a =  await axios.get("/api/users/logout");
     //  console.log(a)
       toast.success("Logout successful");

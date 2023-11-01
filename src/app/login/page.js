@@ -16,14 +16,15 @@ const Login = () => {
   const [buttonDisabled, setDisabled] = React.useState(false);
   const [loading, setLoading] = React.useState(false);
   const [error, setError] = React.useState();
-  const onLogin = async () => {
+  const onLogin = async (e) => {
+    e.preventDefault()
     try {
       setLoading(true);
       const response = await axios.post("/api/users/login", user);
       console.log("RES", response)
       toast.success("Login Sucess!");
       setCookie('token', response.data.token);
-      router.push("/home");
+      await router.push("/home");
     } catch (e) {
       setError(e.response.data);
       toast.error(e.message);
@@ -74,8 +75,8 @@ const Login = () => {
       </div>
       <div className="sm:mt-20 mt-6 text-center">
         <div
-          onClick={() => {
-            !buttonDisabled && onLogin();
+          onClick={(e) => {
+            !buttonDisabled && onLogin(e);
           }}
           className={`h-14 w-[300px] custom-border m-auto flex justify-center items-center text-2xl font-bold ${
             buttonDisabled
